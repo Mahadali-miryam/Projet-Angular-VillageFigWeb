@@ -1,0 +1,56 @@
+.navbar {
+  background-color: #151217; 
+}
+
+.navbar-brand img {
+  max-width: 55px; 
+  height: auto; 
+}
+
+.navbar-nav {
+  margin-left: auto; 
+}
+
+button{
+  color:#DA001E;
+}
+
+.nav-link {
+  color: #FDD90B;
+  margin-left: 4rem; 
+  @font-face {
+    font-family: 'Bubbleboddy Neue';
+    src: url('public/bubbleboddy_neue/bubbleboddyneue-regular trial.ttf') format('truetype');
+  }
+}
+.nav-link:hover {
+  color:#DA001E; 
+}
+
+.container-fluid {
+  padding-left: 40px; 
+  padding-right: 40px; 
+}
+
+/* Ajustements pour tablettes */
+@media (max-width: 768px) {
+  .container-fluid {
+    padding-left: 30px; 
+    padding-right: 30px;
+  }
+  .nav-link { 
+    margin-left: 0.5rem; 
+  }
+}
+
+
+/* Ajustements pour mobiles */
+@media (max-width: 576px) {
+  .container-fluid {
+    padding-left: 20px; 
+    padding-right: 20px;
+  }
+  .nav-link { 
+    margin-left: 0.5rem; 
+  }
+}
