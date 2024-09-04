@@ -23,6 +23,7 @@ button{
     src: url('public/bubbleboddy_neue/bubbleboddyneue-regular trial.ttf') format('truetype');
   }
 }
+
 .nav-link:hover {
   color:#DA001E; 
 }
