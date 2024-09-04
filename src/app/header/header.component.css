@@ -45,7 +45,6 @@ button{
   }
 }
 
-
 /* Ajustements pour mobiles */
 @media (max-width: 576px) {
   .container-fluid {
