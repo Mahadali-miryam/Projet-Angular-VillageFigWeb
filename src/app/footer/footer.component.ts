@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-
+  facebookLink = 'https://facebook.com/au-petit-village';
+  twitterLink = 'https://twitter.com/au-petit-village';
+  
 }
