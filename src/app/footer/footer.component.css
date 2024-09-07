@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Bubbleboddy Neue';
+  src: url('/public/bubbleboddy_neue/bubbleboddyneue-regular trial.ttf') format('truetype');
+}
+.footer {
+  background-color: #151217;
+  color:#F9D0A3;
+  padding: 20px 0;
+  
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.footer-link {
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+.social-links a:hover {
+  transform: scale(1.3); 
+}
+
+.logo-name p {
+  font-weight: 700;
+  color:#DA001E; 
+  font-family: 'Bubbleboddy Neue';
+  
+}
+.welcome-message{
+  font-family: 'confortaa';
+}
+
+.footer .copyright {
+  text-align: center; 
+  margin-top: 20px; 
+  font-size: 0.8rem; 
+  color: #F9D0A3; 
+  width: 100%; 
+}
+
+/* Ajustements pour tablettes */
+@media (max-width: 768px) {
+  .footer .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .welcome-message{
+    text-align: center; 
+    padding: 10px 0; 
+  }
+}
+
+ /* Ajustements pour mobiles */
+@media (max-width: 576px) {
+  .footer .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .welcome-message{
+    font-size: 0.9rem;
+    text-align: center; 
+    padding: 10px 0; 
+  }
+}
