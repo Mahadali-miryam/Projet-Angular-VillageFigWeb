@@ -8,7 +8,7 @@
 }
 
 .navbar-brand img {
-  max-width: 55px; 
+  width: 60%; 
   height: auto; 
 }
 
@@ -24,7 +24,7 @@ button{
   color: #FDD90B;
   margin-left: 4rem; 
   font-weight: 500; 
-  font-family: 'Bubbleboddy Neue';
+  font-family: 'Bubbleboddy Neue'sans-serif;
 }
 
 .nav-link:hover {
@@ -32,8 +32,8 @@ button{
 }
 
 .container-fluid {
-  padding-left: 40px; 
-  padding-right: 40px; 
+  padding-left: 100px; 
+  padding-right: 100px; 
 }
 
 /* Ajustements pour tablettes */
@@ -46,14 +46,22 @@ button{
     margin-left: 0.5rem; 
   }
 }
+.navbar-brand img {
+  width: 50%; 
+  height: auto; 
+}
 
 /* Ajustements pour mobiles */
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   .container-fluid {
     padding-left: 20px; 
     padding-right: 20px;
   }
   .nav-link { 
     margin-left: 0.5rem; 
+  }
+  .navbar-brand img {
+    width:40%; 
+    height: auto; 
   }
 }
