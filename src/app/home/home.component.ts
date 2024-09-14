@@ -1,12 +1,41 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../services/product.service';
+import { CommonModule } from '@angular/common'; 
+import { FormsModule } from '@angular/forms';
+import { FilterByNamePipe } from'../filter-by-name.pipe'; 
+import { SortByPricePipe } from '../sort-by-price.pipe';
 
-@Component({
+@Component({ 
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, FormsModule, FilterByNamePipe, SortByPricePipe],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
 
+export class HomeComponent implements OnInit {
+  products: any[] = []; // Pour stocker les produits
+  filteredProducts: any[] = [];
+  searchTerm: string = '';
+  sortOrder: string = 'priceAsc'; 
+
+
+constructor(private productService:ProductService) {}
+
+  ngOnInit() {
+    this.getProducts();
 }
+
+//récupére les produits depuis le ProductService
+  getProducts() {
+    this.products = this.productService.getProducts(); 
+  }
+  
+  //gérer le tri des produits selon l'ordre sélectionné
+  sortProducts(event: any) {
+    this.sortOrder = event.target.value;
+  
+  } 
+}
+
+
