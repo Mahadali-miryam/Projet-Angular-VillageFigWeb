@@ -1,9 +1,34 @@
 <main>
-<section class="welcome-section">
-    <h1>Bienvenue à Au petit village</h1>
-        <p>Découvrez l'univers d'Astérix & Obélix à travers nos figurines faites main, 
-        un hommage aux héros de notre enfance.<br> 
-        Chaque pièce est sculptée avec passion, 
-        reflétant l'esprit et l'humour de la célèbre bande dessinée.</p>
-</section>
+    <section class="welcome-section">
+        <h1>Bienvenue à Au petit village</h1>
+            <p>Découvrez l'univers d'Astérix & Obélix à travers nos figurines faites main, 
+            un hommage aux héros de notre enfance.<br> 
+            Chaque pièce est sculptée avec passion, 
+            reflétant l'esprit et l'humour de la célèbre bande dessinée.</p>
+    </section>
+
+<!-- Catalogue des Produits -->
+    <section class="product-catalog">
+        <h2>Nos Figurines</h2>
+        <div class="filter-controls">
+          <select (change)="sortProducts($event)">
+            <option value="priceAsc">Prix Croissant</option>
+            <option value="priceDesc">Prix Décroissant</option>
+          </select>
+          <input type="text" placeholder="Recherche par nom"[(ngModel)]="searchTerm" >
+        </div>  
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let product of (products | filterByName:searchTerm | sortByPrice:sortOrder)">
+              <div class="card">
+                <img src= "{{ product.img }}" class="card-img-top img-height-adjust"  alt="{{ product.alt }}">
+                <div class="card-body">
+                  <h5 class="card-title">{{ product.name }}</h5>
+                  <p class="card-text">{{ product.price }}€</p>
+                  <a href="#" class="btn btn-yellow">Ajouter au panier</a>
+                </div>
+              </div>
+            </div>
+          </div> 
+    </section>
 </main>
