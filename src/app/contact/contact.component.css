@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Bubbleboddy Neue';
+    src: url('/public/bubbleboddy_neue/bubbleboddyneue-regular trial.ttf') format('truetype');
+  }
+
+.form-background {
+    background-color:#F9D0A3 ;
+    padding: 20px; 
+    opacity: 0.9;
+}
+
+.contact-form {
+    background-color:#f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px;
+    max-width: 500px;
+    margin: auto;
+}
+  
+.contact-form h2 {
+    color: #DA001E;
+    font-family: 'Bubbleboddy Neue', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+  
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #151217;
+}
+  
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+  
+.contact-form button {
+    background-color:#FDD90B;
+    color: #151217;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Confortaa', sans-serif;
+    font-weight: 600;
+}
+  
+.contact-form button:hover {
+    background-color: #DA001E ;
+     
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+ /*tablette*/
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 15px;
+        max-width: 400px;
+    }
+    .contact-form h2 {
+        margin-bottom: 15px;
+    }
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea,
+    .contact-form button {
+        padding: 8px 15px;
+    }
+    .button-container {
+        padding: 0 15px; 
+    }
+}
+
+/*mobiles */
+@media (max-width: 480px) {
+    .form-background {
+        padding: 40px;
+    }
+    .contact-form {
+        padding: 10px;
+        max-width: 100%;
+    }
+    .contact-form h2 {
+        font-size: 18px; 
+    }
+    .contact-form label {
+        margin-bottom: 3px;
+    }
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea,
+    .contact-form button {
+        margin-bottom: 15px;
+        padding: 8px 10px;
+    }
+    .button-container {
+        padding: 0 10px; 
+    }
+} 
