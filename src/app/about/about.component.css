@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Bubbleboddy Neue';
+    src: url('/public/bubbleboddy_neue/bubbleboddyneue-regular trial.ttf') format('truetype');
+}
+
+.external-background {
+    background-color:#F9D0A3;
+    padding: 20px; 
+    opacity: 0.9;
+}
+
+main {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 2rem;
+    background-color: #f8f9fa; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px;
+    margin-bottom: 90px;
+}
+
+.presentation-background{
+    background-color:#F9D0A3 ;
+}
+h1 { 
+    color: #DA001E; 
+    font-family:'Bubbleboddy Neue'sans-serif ;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h3{
+    font-family:'Bubbleboddy Neue'sans-serif;
+    color:  #151217; ;
+
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #151217; 
+    line-height: 1.6;
+    font-family: 'confortaa', sans-serif;
+}
+
+strong{
+    font-style: italic;
+  }
+
+@media (max-width: 768px) {
+    main {
+        margin: 50px auto; 
+        padding: 1rem; 
+        max-width: 100%; 
+    }
+
+    p, .bold-text, strong {
+        margin-bottom: 0.5rem; 
+        font-size: 0.9rem; 
+    }
+}
