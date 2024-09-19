@@ -8,7 +8,7 @@ import { SortByPricePipe } from '../sort-by-price.pipe';
 @Component({ 
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, FormsModule, FilterByNamePipe, SortByPricePipe],
+  imports: [CommonModule,FormsModule, FilterByNamePipe, SortByPricePipe],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })

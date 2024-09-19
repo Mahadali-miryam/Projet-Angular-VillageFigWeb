@@ -3,18 +3,19 @@ import emailjs from 'emailjs-com';
 import { FormsModule } from '@angular/forms';
 import { environment } from '../../environments/environment'; 
 
+
 @Component({
   selector: 'app-contact',
   standalone: true,
   imports: [FormsModule],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css'
+  styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
   contact = {
     name: '',
     email: '',
-    message: ''
+    message: '',
   };
 
   constructor() {}

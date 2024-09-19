@@ -5,7 +5,7 @@
 
 .form-background {
     background-color:#F9D0A3 ;
-    padding: 20px; 
+    padding: 60px; 
     opacity: 0.9;
 }
 
@@ -52,11 +52,11 @@
     cursor: pointer;
     font-family: 'Confortaa', sans-serif;
     font-weight: 600;
+    transition: background-color 0.3s ease
 }
   
 .contact-form button:hover {
     background-color: #DA001E ;
-     
 }
 
 .button-container {
