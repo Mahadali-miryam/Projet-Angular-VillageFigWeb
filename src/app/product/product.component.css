@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Bubbleboddy Neue';
+    src: url('/public/bubbleboddy_neue/bubbleboddyneue-regular trial.ttf') format('truetype');
+  }
+
+.product-display {
+    text-align: center;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 60px;
+    background-color: #F9D0A3;
+  }
+  
+  .product-img {
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  
+  .product-price {
+    color: #DA001E; 
+    font-weight: bold;
+    margin: 10px 0; 
+    font-size: 30px;
+  }
+  h2{
+    font-family: 'Bubbleboddy Neue'sans-serif;
+    color:#151217 ;
+    padding-bottom: 30px;
+    font-weight: bold;
+  }
+  .product-description {
+    font-family: 'confortaa', sans-serif;
+    color:#151217; 
+    font-size: 1.1rem;
+    line-height: 1.6; 
+    max-width: 700px; 
+    margin: 20px auto; 
+    text-align: left; 
+    padding: 10px 20px;
+    background-color: #f8f9fa ; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px ; 
+  }
+
+  /* tablettes */
+  @media (max-width: 768px) {
+    .product-img {
+      height: 250px; 
+    }
+    .product-display{
+        padding: 60px;
+    }
+    .product-description {
+        font-size: 1rem;
+        max-width: 100%; 
+      }
+  }
+  
+  /* mobiles */
+  @media (max-width: 480px) {
+    .product-img {
+      height: 200px;
+    }
+    .product-description {
+        font-size: 0.9rem; 
+        padding: 15px; 
+        margin: auto;
+      }
+  }
