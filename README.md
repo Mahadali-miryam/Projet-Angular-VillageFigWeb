@@ -1,6 +1,22 @@
 # VillageFigWeb
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
+Il s'agit d'une application web conçue pour présenter une collection de figurines inspirées de célèbres personnages de bandes dessinées et de films, offrant aux utilisateurs une interface interactive pour explorer et découvrir chaque pièce de collection.
+
+## Prérequis
+
+Avant de commencer, assurez-vous d'avoir installé Node.js (version recommandée 14.x ou plus) et npm/yarn sur votre machine. Angular CLI doit également être installé globalement via `npm install -g @angular/cli`.
+## Installation
+
+Pour installer les dépendances du projet, exécutez :
+
+bash
+npm install
+
+ou si vous utilisez yarn :
+
+bash
+yarn
 
 ## Development server
 
@@ -26,3 +42,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 # Projet-Angular-VillageFigWeb
+

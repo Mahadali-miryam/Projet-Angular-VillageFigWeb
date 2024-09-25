@@ -29,10 +29,10 @@ export class ContactComponent {
     // Envoi du formulaire avec EmailJS en utilisant les identifiants stockés dans l'objet environment
     emailjs.send(environment.emailjsServiceId, environment.emailjsTemplateId, templateParams, environment.emailjsUserId)
     .then((response) => {
-      console.log('SUCCESS!', response.status, response.text);
+    
       alert('Votre message a été envoyé avec succès !');
     }, (err) => {
-      console.log('FAILED...', err);
+    
       alert('Erreur lors de l\'envoi du message. Veuillez réessayer.');
     });
   }

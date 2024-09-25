@@ -18,7 +18,7 @@ main{
 h1{
     font-family: 'Bubbleboddy Neue'sans-serif;
     color:#DA001E ;
-    font-weight: 600;
+    font-weight:bold ;
     text-align: center;
     padding-top: 30px;
     margin-bottom: 30px;
@@ -34,8 +34,9 @@ p{
 }
 
 .card {
+  
     max-width: 300px; 
-    margin: auto;
+    margin: 10px auto;
 }
 
  
@@ -92,7 +93,7 @@ input {
    margin: 10px;
 }
 
-/* Ajustements pour tablettes */
+/* tablettes */
 @media (max-width: 768px) {
     main {
         padding-left: 50px;
@@ -106,7 +107,7 @@ input {
     }
     .card {
         max-width: 300px; 
-        margin: auto;
+        margin: 20px auto;
       }
       .img-height-adjust {
         height: 274px; 
@@ -115,7 +116,7 @@ input {
       }    
 }
 
-/* Ajustements pour mobiles */
+/*mobiles */
 @media (max-width: 480px) {
     main {
         padding-left: 20px;
@@ -123,17 +124,26 @@ input {
     }
     h1 {
         font-size: 22px; 
+        margin-bottom: 20px;
+        padding-top: 20px;
     }
     p {
-        font-size: 14px; 
+        font-size: 14px;
+        padding: 0 10px;
     }
     .card {
         max-width: 250px; 
-        margin: auto;
-      }
-      .img-height-adjust {
-        height: 350px; 
+        margin: 20px auto;
+      
+    }
+   
+    .img-height-adjust {
+        height: 250px; 
         width: auto; 
-        object-fit: cover; 
-      }
+        object-fit: cover;
+    }
+    .btn-yellow {
+        font-size: 14px; 
+        padding: 8px 15px; 
+    }
 }    
